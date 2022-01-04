@@ -76,8 +76,8 @@ class Heap {
         while(index < heap.size()){
             
             int temp = heap.get(index);
-            
-            if(this.size() > index+1 && temp > heap.get(index+1)){
+
+            if(this.size() >= index+1 && temp > heap.get(index+1)){
                 temp = heap.get(index+1);
                 index = index+1;
             }
